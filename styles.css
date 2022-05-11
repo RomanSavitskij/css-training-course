@@ -12,14 +12,14 @@ header {
   top: 0%;
   width: 100%;
 }
-.main {
+main {
   display: flex;
   justify-content: flex-start;
 }
 .mainContent {
     width: 66%;
 }
-.aside {
+aside {
   background-color: aqua;
   width: 34%;
   position: relative;

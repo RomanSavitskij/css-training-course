@@ -27,7 +27,7 @@ aside {
 button {
     height: 4vh;
     width: 7vw;
-    border-radius: 8%;
+    border-radius: 0.25em;
     border: 0px;
     color: #fff;
     background-color: #0d6efd;
@@ -39,6 +39,7 @@ button {
     float: right;
     right: 20px;
     top: 94px;
+    /* рпа */
 }
 button:active {
   background-color: #0a5ad1;

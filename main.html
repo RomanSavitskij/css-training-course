@@ -6,10 +6,21 @@
     <title>Task1</title>
   </head>
   <body>
-    <div>
-      <header>
-        <h1>Header</h1>
+    <!-- <div class=''> -->
+      <header class="header">
+        <div class="logo header__logo">
+          <a class="logo__link" href="#">My Logo</a>
+          <span class="logo__description">Some description</span>
+        </div>
+
+        <h1 class="header__title">Header</h1>
+
+        <section class="avatar">
+          <h3 class="avatar__user-name">User Avatar</h3>
+          <div class="avatar__img"></div>
+        </section>
       </header>
+
       <main>
         <div class="mainContent">
           <h2>Main content</h2>
@@ -22,6 +33,10 @@
                 reiciendis libero, adipisci nam aperiam.
               </p>
             </li>
+
+            <div class="float">Hello World</div>
+            <div class="float float-two">Hello World</div>
+
             <li>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -97,7 +112,9 @@
           </ul>
         </div>
         <aside>
-          <button type="button">Contact</button>
+          <button class="button" type="button">Contact</button>
+          <button class="button  button__negative" type="button">Delete</button>
+          <button class="button button_positive" type="button">Complete</button>
           <div>
             <h2>Aside content</h2>
             <p>
@@ -109,9 +126,13 @@
           </div>
         </aside>
       </main>
-      <footer>
+      <foote class="footer">
+        <div class="logo">
+          <a class="logo__link" href="#">My Logo</a>
+          <span class="logo__description">Some description</span>
+        </div>
         <h1>Footer</h1>
       </footer>
-    </div>
+    <!-- </div> -->
   </body>
 </html>

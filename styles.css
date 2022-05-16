@@ -1,56 +1,72 @@
-body {
-  width: 100%;
-  height: 100%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-header {
-  background-color: rgb(47, 47, 190);
-  /* margin-block-start: 0px; */
-  top: 0px;
+
+.container {
+  /* здесь будет белый фон с тенью */
+}
+
+.car-types {
   display: flex;
+  justify-content: center;
+  border-radius: 2%;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.car-types__sedans {
+  background-color: #df8622;
+}
+
+.car-types__suvs {
+  background-color: #01686f;
+}
+
+.car-types__luxury {
+  background-color: #013e3f;
+}
+
+.card {
+  width: 250px;
+  height: 440px;
+  padding: 35px;
+  font-family: "Roboto", sans-serif;
   display: flex;
-  position: relative;
-  top: 0%;
-  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #eef3f2;
 }
-main {
-  display: flex;
-  justify-content: flex-start;
+
+.card__name {
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
-.mainContent {
-    width: 66%;
+
+.card__description {
+  font-size: 0.9em;
+  line-height: 1.7;
 }
-aside {
-  background-color: aqua;
-  width: 34%;
-  position: relative;
+
+.card__button {
+  height: 50px;
+  width: 120px;
+  margin: 3rem 0px 0px 0px;
+  border-radius: 1.5rem;
+  border: 2px #eef3f2 solid;
 }
-button {
-    height: 4vh;
-    width: 7vw;
-    border-radius: 0.25em;
-    border: 0px;
-    color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: sticky;
-    float: right;
-    right: 20px;
-    top: 94px;
-    /* рпа */
+
+.card__button:active {
+  background-color: rgba(0, 0, 0, 0);
+  color: #eef3f2;
 }
-button:active {
-  background-color: #0a5ad1;
-  color: rgb(219, 219, 219);
+
+li {
+  list-style-type: none;
+  margin: 15px 0px;
 }
-footer {
-  background-color: grey;
-  display: flex;
-  position: relative;
-  bottom: 0%;
-  width: 100%;
-  height: 100vh;
+
+button p {
+  font-size: 1.1rem; /* хз, как сделать буквы прозрачными */
 }
-/* just comment */

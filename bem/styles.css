@@ -8,6 +8,7 @@ body {
   --orange-card: hsl(31, 77%, 52%);
   --blue-card: hsl(184, 100%, 22%);
   --green-card: hsl(179, 100%, 13%);
+  --bg-color: #eef3f2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,31 +39,40 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -2%;
 }
 
+.background__img_right-top {
+  top: 20%;
+  right: -1%;
+}
+
+.background__img_top {
+  top: -15%;
+  right: 40%;
+}
+
+.background__img_left-bottom {
+  left: 25%;
+  bottom: -2%;
+}
+
 .blue-circles {
   height: 150px;
 }
 
 .blue-ring {
-  width: 10%;
+  height: 200px;
 }
 
 .waves-pink {
-  top: 20%;
-  right: -1%;
-  width: 15%;
+  height: 110px;
 }
 
 .two-slashes {
-  left: 25%;
-  bottom: -2%;
-  width: 4%;
+  height: 120px;
   opacity: 50%;
 }
 
 .L-pink {
-  top: -15%;
-  right: 40%;
-  width: 3%;
+  height: 220px;
 }
 
 .frame {
@@ -73,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1vh 2vh 3vh rgb(209, 209, 209);
+  box-shadow: 10px 10px 10px rgb(209, 209, 209);
   position: absolute;
   z-index: 2;
 }
@@ -103,32 +113,32 @@ h1, h2, h3, h4, h5, h6 {
   height: 440px;
   padding: var(--margin-size);
   font-family: "Lexend Deca", sans-serif;
-  color: #eef3f2;
+  color: var(--bg-color);
   position: relative;
 }
 
 .card__icon {
-  width: 4em;
+  width: 64px;
 }
 
 .card__name {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-family: "Big Shoulders Display", cursive;
   margin-top: 26px;
 }
 
 .card__description {
   font-size: 16px;
-  line-height: 1.3;
-  width: 12rem;
+  line-height: 1.5;
+  width: 100%;
   margin-top: 26px;
 }
 
 .btn {
   padding: 13px;
   background-color: hsl(0, 0%, 95%);
-  border-radius: 1.5rem;
+  border-radius: 25px;
   border: 2px hsl(0, 0%, 95%) solid;
   font-size: 18px;
   font-weight: 600;
@@ -155,5 +165,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .card__btn:active {
   background-color: rgba(0, 0, 0, 0);
-  color: #eef3f2;
+  color: var(--bg-color);
 }

@@ -11,13 +11,18 @@
     <title>3-column preview card component</title>
   </head>
   <body>
-    <main>
-      <img src="images/blue-circles.png" alt="blue-circles" class="blue-circles"/>
-      <img src="images/blue-ring.png" alt="blue-ring" class="blue-ring"/>
-      <img src="images/L-pink.png" alt="L-pink" class="L-pink"/>
-      <img src="images/two-slashes.png" alt="two-slashes" class="two-slashes"/>
-      <img src="images/waves-pink.png" alt="waves-pink" class="waves-pink"/>
-      <div class="container">
+    <main class="background">
+      <img
+        class="background__img
+          background__img_left
+          blue-circles"
+        src="images/blue-circles.png"
+        alt="blue-circles"/>
+      <img class="background__img background__img_right-bottom blue-ring" src="images/blue-ring.png" alt="blue-ring" />
+      <img class="background__img L-pink" src="images/L-pink.png" alt="L-pink" />
+      <img class="background__img two-slashes" src="images/two-slashes.png" alt="two-slashes" />
+      <img class="background__img waves-pink" src="images/waves-pink.png" alt="waves-pink" />
+      <div class="frame">
         <div class="car-types">
           <div class="car-types__sedans card">
             <img
@@ -60,8 +65,8 @@
               Cruise in the best car brands without the bloated prices. Enjoy
               the enhanced comfort of a luxury rental and arrive in style.
             </p>
-            <button type="button" class="card__button">
-              <p id="luxury__button">Learn More</p>
+            <button type="button" class="btn card__btn card__btn_green">
+              Learn More
             </button>
           </div>
         </div>

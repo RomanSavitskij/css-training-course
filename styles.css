@@ -11,17 +11,59 @@ main {
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 93%);
+  overflow: hidden;
+}
+
+.blue-circles .blue-ring .L-pink .waves-pink .two-slashes {
+  position: absolute;
+  z-index: 1;
+}
+
+.blue-circles {
+  position: absolute;
+  left: -1%;
+  height: 15%;
+}
+
+.blue-ring {
+  position: absolute;
+  right: -1%;
+  bottom: -2%;
+  width: 10%;
+}
+
+.waves-pink {
+  position: absolute;
+  top: 20%;
+  right: -1%;
+  width: 15%;
+}
+
+.two-slashes {
+  position: absolute;
+  left: 25%;
+  bottom: -2%;
+  width: 4%;
+  opacity: 50%;
+}
+
+.L-pink {
+  position: absolute;
+  top: -15%;
+  right: 40%;
+  width: 3%;
 }
 
 .container {
   background-color: hsl(0, 0%, 95%);
   overflow: hidden;
-  width: 90vw;
+  width: 85vw;
   height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 1vh 2vh 3vh rgb(209, 209, 209);
+  position: absolute;
 }
 
 .car-types {
@@ -48,7 +90,7 @@ main {
   width: 270px;
   height: 440px;
   padding: 35px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   color: #eef3f2;
   position: relative;
 }
@@ -62,17 +104,17 @@ main {
 .card__name {
   text-transform: uppercase;
   font-size: 2.5rem;
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   position: absolute;
   top: 12vh;
 }
 
 .card__description {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.3;
   position: absolute;
   top: 21vh;
-  width: 18vw;
+  width: 12rem;
 }
 
 .card__button {
@@ -90,11 +132,6 @@ main {
 .card__button:active {
   background-color: rgba(0, 0, 0, 0);
   color: #eef3f2;
-}
-
-li {
-  list-style-type: none;
-  margin: 15px 0px;
 }
 
 button p {

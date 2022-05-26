@@ -1,5 +1,3 @@
-
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +5,9 @@ body {
   height: 100vh;
 
   --margin-size: 35px;
-  --green-card: hsl(179, 28%, 37%);
+  --orange-card: hsl(31, 77%, 52%);
+  --blue-card: hsl(184, 100%, 22%);
+  --green-card: hsl(179, 100%, 13%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,31 +22,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: hsl(0, 0%, 93%);
   overflow: hidden;
   position: relative;
-}
-
-.rectangle {
-  height: 100px;
-  width: 100px;
-  background-color: salmon;
-}
-
-.circle {
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
-  border: 3px solid blue;
-  position: absolute;
-  right: 0;
-}
-
-.small-circle {
-  height: 40px;
-  width: 40px;
-  border: 3px solid blue;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -100%);
 }
 
 .background__img {
@@ -103,24 +78,23 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
-.car-types {
+.wrapper {
   display: flex;
   justify-content: center;
   overflow: hidden;
   list-style-type: none;
-  border-radius: 1vh;
-  /* display: none; */
+  border-radius: 10px;
 }
 
-.car-types__sedans {
-  background-color: hsl(31, 77%, 52%);
+.wrapper__sedans {
+  background-color: var(--orange-card);
 }
 
-.car-types__suvs {
-  background-color: hsl(184, 100%, 22%);
+.wrapper__suvs {
+  background-color: var(--blue-card);
 }
 
-.car-types__luxury {
+.wrapper__luxury {
   background-color: var(--green-card);
 }
 
@@ -152,8 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  height: 50px;
-  width: 120px;
+  padding: 13px;
   background-color: hsl(0, 0%, 95%);
   border-radius: 1.5rem;
   border: 2px hsl(0, 0%, 95%) solid;
@@ -168,15 +141,19 @@ h1, h2, h3, h4, h5, h6 {
   left: var(--margin-size);
 }
 
+.card__btn_orange {
+  color: var(--orange-card);
+}
+
+.card__btn_blue {
+  color: var(--blue-card);
+}
+
 .card__btn_green {
   color: var(--green-card);
 }
 
-.card__button:active {
+.card__btn:active {
   background-color: rgba(0, 0, 0, 0);
   color: #eef3f2;
-}
-
-button p {
-  font-size: 1.1rem; /* хз, как сделать буквы прозрачными */
 }
